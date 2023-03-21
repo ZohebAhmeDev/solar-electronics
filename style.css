@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  padding-left: 5px;
+}
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/solar-farm.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  animation-name: field;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes field {
+  0% {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  20% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  40% {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  60% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  80% {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+#hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero img {
+  width: 70px;
+  height: 70px;
+}
+
+#hero {
+  height: 100px;
+  width: 100px;
+  animation-timing-function: ease-in-out;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 2px;
+  }
+}
+
+.brand {
+  position: relative;
+  animation-name: brand;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes brand {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.home h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: rgb(74, 157, 240);
+}
+
+.home p {
+  font: italic;
+  font-size: 1.5em;
+}
+
+.feature p {
+  color: grey;
+}
+#icon {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(74, 157, 240);
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  font-size: 45px;
+  text-align: center;
+  display: inline-block;
+}
+
+#icon:hover {
+  background: #0575e6;
+  color: white;
+  height: 104px;
+  width: 104px;
+  transition: 0.5s;
+}
+
+.about .p1 {
+  font-size: 1.3rem;
+  color: grey;
+}
+
+.about p {
+  color: grey;
+}
+
+.service {
+  background-image: linear-gradient(#36d1dc, #5b86e5);
+}
+
+.card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img1 img {
+  height: 200px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+}
+.img2 img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  margin-top: -70px;
+}
+
+.card:hover .img2 img {
+  border-color: rgb(74, 157, 240);
+  transition: 4s;
+}
+
+.main-name {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.main-name h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.main-name p {
+  font-size: 16px;
+  padding: 0 35px;
+}
+
+.gallery img {
+  width: 285px;
+  height: 285px;
+  display: inline-block;
+  border-left: 1px solid white;
+  transition: transform 1s, filter 2s ease-in-out;
+  padding: 5px;
+}
+
+.gallery img:hover {
+  transform: scale(0.9);
+}
+
+.feature img {
+  display: inline-block;
+
+  transition: transform 1s, filter 2s ease-in-out;
+}
+
+.feature img:hover {
+  transform: scale(0.9);
+}
+
+.gallery p {
+  color: grey;
+}
+
+.news img {
+  display: inline-block;
+  border-left: 1px solid white;
+  margin-bottom: 15px;
+}
+.news p,
+a {
+  color: grey;
+}
+
+.news a {
+  color: rgb(74, 157, 240);
+}
+
+.news small {
+  font-weight: bold;
+  color: rgb(4, 4, 89);
+  margin-bottom: 20px;
+}
+
+.news .btn {
+  height: 40px;
+  width: 140px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.letter {
+  background-image: linear-gradient(#232526, #414345);
+  color: white;
+  text-align: center;
+}
+
+.letter input {
+  height: 38px;
+  width: 43%;
+  border-radius: 5px;
+  border: none;
+}
+
+.letter .btn {
+  margin-bottom: 6px;
+}
+
+.letter .fa-brands {
+  font-size: 30px;
+  color: white;
+  padding: 0 20px;
+}
+
+footer {
+  background: lightgrey;
+  color: grey;
+}
+
+.letter hr {
+  border-top: 1px solid white;
+}
