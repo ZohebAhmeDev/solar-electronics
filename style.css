@@ -188,7 +188,6 @@
   width: 285px;
   height: 285px;
   display: inline-block;
-  border-left: 1px solid white;
   transition: transform 1s, filter 2s ease-in-out;
   padding: 5px;
 }
